@@ -26,4 +26,4 @@ This project contains Cypress tests to evaluate the following elements on the ht
 ## Strategy
 - The test suite is structured to run in Cypress, leveraging its powerful integration testing capabilities.
 - Cypress commands and assertions are used to interact with and verify the elements on the page.
-- Tests are organized into separate `describe` blocks with `before` hooks for clarity and better test management.
+- Tests are organized into separate `describe` blocks with `beforeEach` hooks for clarity and better test management.

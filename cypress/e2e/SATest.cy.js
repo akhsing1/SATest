@@ -28,13 +28,13 @@ describe('Tendable Website Tests', () => {
           .contains('Contact')
           .click();
         });
-      cy.get('input[name="fullName"]').first().type('Test User');
+      cy.get('input[name="fullName"]').filter(':visible').type('Test User');
       cy.get('input[name="email"]').first().type('test@example.com');
-      cy.get('input[name="cellPhone"]').first().type('1234567890');
-      cy.get('input[name="organisationName"]').first().type('Org Name')
-      cy.get('input[name="consentAgreed"]').first().click()
+      cy.get('input[name="cellPhone"]').filter(':visible').type('1234567890');
+      cy.get('input[name="organisationName"]').filter(':visible').type('Org Name')
+      cy.get('input[name="consentAgreed"]').filter(':visible').click()
       cy.get('button[name="form_page_submit"]').first().click();
-      cy.contains('This field is required').should('be.visible');
+      cy.contains('This field is required').should('be.visible').and('have.css','color','rgb(24, 27, 53)')
     });
   });
 
