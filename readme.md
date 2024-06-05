@@ -8,11 +8,11 @@ This project contains Cypress tests to evaluate the following elements on the ht
 1. Ensure you have Node.js and npm installed on your machine.
 2. Clone the repository from GitHub:
     ```bash
-    git clone https://github.com/yourusername/tendable-tests.git
+    git clone https://github.com/akhsing1/SATest.git
     ```
 3. Navigate to the project directory:
     ```bash
-    cd tendable-tests
+    cd SATest
     ```
 4. Install the dependencies:
     ```bash
